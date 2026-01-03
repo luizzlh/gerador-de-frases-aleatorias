@@ -2,9 +2,11 @@ package com.alura.frases.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-public class Frases {
+@Table(name="frases")
+public class Frase {
     @Id
     private Long id;
     private String titulo;
@@ -12,9 +14,9 @@ public class Frases {
     private String personagem;
     private String poster;
 
-    public Frases(){}
+    public Frase(){}
 
-    public Frases(Long id, String titulo, String frase, String personagem, String poster) {
+    public Frase(Long id, String titulo, String frase, String personagem, String poster) {
         this.id = id;
         this.titulo = titulo;
         this.frase = frase;
