@@ -14,11 +14,6 @@ public class FrasesController {
     @Autowired
     private FraseService servico;
 
-//    @GetMapping("")
-//    public String index(){
-//        return "Teste";
-//    }
-
     @GetMapping()
     public SerieDTO obterFrase(){
         return servico.obterFrase();
