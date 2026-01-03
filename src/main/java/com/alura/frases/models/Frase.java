@@ -1,6 +1,11 @@
 package com.alura.frases.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Frases {
+    @Id
     private Long id;
     private String titulo;
     private String frase;
